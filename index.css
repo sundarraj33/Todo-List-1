@@ -20,6 +20,7 @@ body{
     padding: 10px;
     overflow: scroll;
     overflow-x:hidden;
+    /* overflow-y:hidden; */
 }
 .title > p{
     font-weight: 100em;
