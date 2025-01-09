@@ -33,8 +33,9 @@ add_btn.addEventListener('click',()=>{
 
                     var Editbutton = document.getElementsByClassName('Editbutton');
                     for(var j=0;j<Editbutton.length;j++){
-                        Editbutton[j].onclick = function(){
-                            console.log(this.parentNode);
+                        Editbutton[j].onclick = function(){                           
+                           name.value = this.closest('.lists').innerText;
+                           this.closest(".lists").remove();
                         }
                     }
    
