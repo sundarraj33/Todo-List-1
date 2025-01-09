@@ -82,7 +82,4 @@ body{
 .buttons:nth-child(odd){
     color: red;
 }
-#del{
-    background-color: red;
-}
 
