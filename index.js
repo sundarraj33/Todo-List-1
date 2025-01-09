@@ -12,14 +12,29 @@ add_btn.addEventListener('click',()=>{
                                     <div class="paragraph">
                                         <p>${name.value}</p>
                                     </div>
-                                    <div class="buttons"><i class="fa-solid fa-trash del"></i></button>                                        
+                                    <div class="buttons">
+                                        <div class='delbutton'>
+                                            <i class="fa-solid fa-trash"></i>
+                                        </div>  
+                                        <div class='Editbutton'>
+                                            <i class="fa-solid fa-pen-to-square"></i>
+                                        </div>                                  
+                                    </button>                                        
                                     </div>
                                 </div>`;
 
-                    var dels = document.getElementsByClassName("buttons");    
+                    var dels = document.getElementsByClassName("delbutton");    
                     for(var i=0;i<dels.length;i++){
-                        dels[i].onclick = function(){
-                            this.parentNode.remove();
+                        dels[i].onclick = function(){                            
+                            this.parentNode.parentNode.remove();
+                        }
+                    }
+
+
+                    var Editbutton = document.getElementsByClassName('Editbutton');
+                    for(var j=0;j<Editbutton.length;j++){
+                        Editbutton[j].onclick = function(){
+                            console.log(this.parentNode);
                         }
                     }
    
