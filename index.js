@@ -14,7 +14,7 @@ add_btn.addEventListener('click',()=>{
                                     </div>
                                     <div class="buttons">
                                         <div class='delbutton'>
-                                            <i class="fa-solid fa-trash"></i>
+                                            <i class="fa-solid fa-trash" ></i>
                                         </div>  
                                         <div class='Editbutton'>
                                             <i class="fa-solid fa-pen-to-square"></i>
